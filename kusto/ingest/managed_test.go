@@ -10,15 +10,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Azure/azure-kusto-go/kusto"
-	"github.com/Azure/azure-kusto-go/kusto/data/errors"
-	"github.com/Azure/azure-kusto-go/kusto/ingest/internal/gzip"
-	"github.com/Azure/azure-kusto-go/kusto/ingest/internal/properties"
-	"github.com/Azure/azure-kusto-go/kusto/ingest/internal/resources"
 	"github.com/cenkalti/backoff/v4"
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/yangzuo0621/azure-kusto-go/kusto"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/ingest/internal/gzip"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/ingest/internal/properties"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/ingest/internal/resources"
 )
 
 type testMgmtFunc func(t *testing.T, ctx context.Context, db string, query kusto.Stmt, options ...kusto.MgmtOption) (*kusto.RowIterator, error)

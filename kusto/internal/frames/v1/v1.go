@@ -4,11 +4,11 @@ package v1
 import (
 	"strings"
 
-	"github.com/Azure/azure-kusto-go/kusto/data/errors"
-	"github.com/Azure/azure-kusto-go/kusto/data/table"
-	"github.com/Azure/azure-kusto-go/kusto/data/types"
-	"github.com/Azure/azure-kusto-go/kusto/data/value"
-	"github.com/Azure/azure-kusto-go/kusto/internal/frames"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/table"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/types"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/value"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/internal/frames"
 )
 
 // DataTypes is a V1 version of table.Columns that have to be dealt with and converted.

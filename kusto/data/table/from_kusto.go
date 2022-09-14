@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/Azure/azure-kusto-go/kusto/data/value"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/value"
 )
 
 // decodeToStruct takes a list of columns and a row to decode into "p" which will be a pointer

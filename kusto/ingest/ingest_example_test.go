@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/Azure/azure-kusto-go/kusto"
-	"github.com/Azure/azure-kusto-go/kusto/ingest"
 	"github.com/Azure/go-autorest/autorest/azure/auth"
+	"github.com/yangzuo0621/azure-kusto-go/kusto"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/ingest"
 )
 
 func ExampleIngestion_FromFile() {

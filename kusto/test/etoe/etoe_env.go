@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/Azure/azure-kusto-go/kusto"
 	"github.com/Azure/go-autorest/autorest/azure/auth"
+	"github.com/yangzuo0621/azure-kusto-go/kusto"
 )
 
 // Config represents a config.json file that must be in the directory and hold information to do the integration tests.

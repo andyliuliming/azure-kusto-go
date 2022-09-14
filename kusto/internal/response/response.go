@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/Azure/azure-kusto-go/kusto/data/errors"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
 )
 
 func TranslateBody(resp *http.Response, op errors.Op) (io.ReadCloser, error) {

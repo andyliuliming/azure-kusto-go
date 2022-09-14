@@ -15,12 +15,12 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/Azure/azure-kusto-go/kusto/data/errors"
-	"github.com/Azure/azure-kusto-go/kusto/internal/frames"
-	v1 "github.com/Azure/azure-kusto-go/kusto/internal/frames/v1"
-	v2 "github.com/Azure/azure-kusto-go/kusto/internal/frames/v2"
-	"github.com/Azure/azure-kusto-go/kusto/internal/response"
-	"github.com/Azure/azure-kusto-go/kusto/internal/version"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/internal/frames"
+	v1 "github.com/yangzuo0621/azure-kusto-go/kusto/internal/frames/v1"
+	v2 "github.com/yangzuo0621/azure-kusto-go/kusto/internal/frames/v2"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/internal/response"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/internal/version"
 
 	"github.com/Azure/go-autorest/autorest"
 	"github.com/google/uuid"

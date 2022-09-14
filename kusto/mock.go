@@ -8,12 +8,12 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/Azure/azure-kusto-go/kusto/data/errors"
-	"github.com/Azure/azure-kusto-go/kusto/data/table"
-	"github.com/Azure/azure-kusto-go/kusto/data/value"
-	"github.com/Azure/azure-kusto-go/kusto/internal/frames"
-	v1 "github.com/Azure/azure-kusto-go/kusto/internal/frames/v1"
 	"github.com/Azure/go-autorest/autorest"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/table"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/value"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/internal/frames"
+	v1 "github.com/yangzuo0621/azure-kusto-go/kusto/internal/frames/v1"
 )
 
 type columnData struct {

@@ -13,17 +13,17 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/Azure/azure-kusto-go/kusto"
-	"github.com/Azure/azure-kusto-go/kusto/data/errors"
-	"github.com/Azure/azure-kusto-go/kusto/data/table"
-	"github.com/Azure/azure-kusto-go/kusto/data/types"
-	"github.com/Azure/azure-kusto-go/kusto/data/value"
-	"github.com/Azure/azure-kusto-go/kusto/ingest"
-	"github.com/Azure/azure-kusto-go/kusto/internal/frames"
-	"github.com/Azure/azure-kusto-go/kusto/unsafe"
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/yangzuo0621/azure-kusto-go/kusto"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/table"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/types"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/value"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/ingest"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/internal/frames"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/unsafe"
 )
 
 var (
@@ -172,7 +172,7 @@ func TestQueries(t *testing.T) {
 			want: &[]CountResult{{Count: 1}},
 		},
 		{
-			desc:  "Mgmt(regression github.com/Azure/azure-kusto-go/issues/11): make sure we can retrieve .show databases, but we do not check the results at this time",
+			desc:  "Mgmt(regression github.com/yangzuo0621/azure-kusto-go/issues/11): make sure we can retrieve .show databases, but we do not check the results at this time",
 			stmt:  kusto.NewStmt(`.show databases`),
 			mcall: client.Mgmt,
 			doer: func(row *table.Row, update interface{}) error {
@@ -183,7 +183,7 @@ func TestQueries(t *testing.T) {
 			},
 		},
 		{
-			desc:  "Mgmt(https://github.com/Azure/azure-kusto-go/issues/55): transformations on mgmt queries",
+			desc:  "Mgmt(https://github.com/yangzuo0621/azure-kusto-go/issues/55): transformations on mgmt queries",
 			stmt:  kusto.NewStmt(`.show databases | project A="1" | take 1`),
 			mcall: client.Mgmt,
 			doer: func(row *table.Row, update interface{}) error {
@@ -202,7 +202,7 @@ func TestQueries(t *testing.T) {
 			want: &[]MgmtProjectionResult{{A: "1"}},
 		},
 		{
-			desc: "Mgmt(https://github.com/Azure/azure-kusto-go/issues/55): transformations on mgmt queries - multiple tables",
+			desc: "Mgmt(https://github.com/yangzuo0621/azure-kusto-go/issues/55): transformations on mgmt queries - multiple tables",
 			stmt: kusto.NewStmt(`.show databases | project A="1" | take 1;`, kusto.UnsafeStmt(unsafe.Stmt{Add: true})).UnsafeAdd(allDataTypesTable).Add(
 				" | project A=\"2\" | take 1"),
 			mcall: client.Mgmt,

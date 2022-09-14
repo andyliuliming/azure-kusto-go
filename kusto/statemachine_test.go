@@ -8,14 +8,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Azure/azure-kusto-go/kusto/data/errors"
-	"github.com/Azure/azure-kusto-go/kusto/data/table"
-	"github.com/Azure/azure-kusto-go/kusto/data/value"
-	"github.com/Azure/azure-kusto-go/kusto/internal/frames"
-	v1 "github.com/Azure/azure-kusto-go/kusto/internal/frames/v1"
-	v2 "github.com/Azure/azure-kusto-go/kusto/internal/frames/v2"
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/table"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/value"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/internal/frames"
+	v1 "github.com/yangzuo0621/azure-kusto-go/kusto/internal/frames/v1"
+	v2 "github.com/yangzuo0621/azure-kusto-go/kusto/internal/frames/v2"
 )
 
 func init() {

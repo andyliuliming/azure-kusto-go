@@ -5,7 +5,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/Azure/azure-kusto-go/kusto"
+	"github.com/yangzuo0621/azure-kusto-go/kusto"
 )
 
 type QueryClient interface {

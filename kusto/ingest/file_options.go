@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Azure/azure-kusto-go/kusto/data/errors"
-	"github.com/Azure/azure-kusto-go/kusto/ingest/internal/properties"
 	"github.com/cenkalti/backoff/v4"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/ingest/internal/properties"
 )
 
 type SourceScope uint

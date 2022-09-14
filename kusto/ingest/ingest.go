@@ -7,12 +7,12 @@ import (
 	"io"
 	"sync"
 
-	"github.com/Azure/azure-kusto-go/kusto/data/errors"
-	"github.com/Azure/azure-kusto-go/kusto/ingest/internal/conn"
-	"github.com/Azure/azure-kusto-go/kusto/ingest/internal/properties"
-	"github.com/Azure/azure-kusto-go/kusto/ingest/internal/queued"
-	"github.com/Azure/azure-kusto-go/kusto/ingest/internal/resources"
 	"github.com/google/uuid"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/ingest/internal/conn"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/ingest/internal/properties"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/ingest/internal/queued"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/ingest/internal/resources"
 )
 
 type Ingestor interface {

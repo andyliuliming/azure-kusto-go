@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Azure/azure-kusto-go/kusto/data/errors"
 	"github.com/cenkalti/backoff/v4"
 	"github.com/google/uuid"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
 )
 
 // CompressionType is a file's compression type.

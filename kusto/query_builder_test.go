@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Azure/azure-kusto-go/kusto/data/types"
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/types"
 )
 
 func TestParamType(t *testing.T) {

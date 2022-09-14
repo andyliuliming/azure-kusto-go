@@ -6,9 +6,9 @@ import (
 
 	"github.com/kylelemons/godebug/pretty"
 
-	"github.com/Azure/azure-kusto-go/kusto/data/table"
-	"github.com/Azure/azure-kusto-go/kusto/data/types"
-	"github.com/Azure/azure-kusto-go/kusto/data/value"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/table"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/types"
+	"github.com/yangzuo0621/azure-kusto-go/kusto/data/value"
 )
 
 func TestParse(t *testing.T) {
