@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
 )
 
 const (

@@ -6,9 +6,9 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/yangzuo0621/azure-kusto-go/kusto/ingest/internal/properties"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/ingest/internal/resources"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/ingest/internal/status"
+	"github.com/andyliuliming/azure-kusto-go/kusto/ingest/internal/properties"
+	"github.com/andyliuliming/azure-kusto-go/kusto/ingest/internal/resources"
+	"github.com/andyliuliming/azure-kusto-go/kusto/ingest/internal/status"
 )
 
 // Result provides a way for users track the state of ingestion jobs.

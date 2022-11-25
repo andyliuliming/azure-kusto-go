@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/table"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/internal/frames"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/internal/frames/unmarshal/json"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/table"
+	"github.com/andyliuliming/azure-kusto-go/kusto/internal/frames"
+	"github.com/andyliuliming/azure-kusto-go/kusto/internal/frames/unmarshal/json"
 )
 
 // Decoder implements frames.Decoder on the REST v2 frames.

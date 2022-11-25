@@ -6,13 +6,12 @@ import (
 	"context"
 	"fmt"
 	"io"
-	"net/http"
 	"os"
 	"testing"
 
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
+	"github.com/andyliuliming/azure-kusto-go/kusto/ingest/internal/properties"
 	"github.com/stretchr/testify/assert"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/ingest/internal/properties"
 
 	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob"
 )
@@ -82,21 +81,21 @@ type fakeBlobstore struct {
 	shouldErr bool
 }
 
-func (f *fakeBlobstore) uploadBlobStream(_ context.Context, reader io.Reader, _ *azblob.BlockBlobClient,
-	_ azblob.UploadStreamOptions) (azblob.BlockBlobCommitBlockListResponse, error) {
+func (f *fakeBlobstore) uploadBlobStream(_ context.Context, container string, blobName string, reader io.Reader, _ *azblob.Client,
+	_ *azblob.UploadStreamOptions) (azblob.UploadStreamResponse, error) {
 	if f.shouldErr {
-		return azblob.BlockBlobCommitBlockListResponse{}, fmt.Errorf("error")
+		return azblob.UploadStreamResponse{}, fmt.Errorf("error")
 	}
 	_, err := io.Copy(f.out, reader)
-	return azblob.BlockBlobCommitBlockListResponse{}, err
+	return azblob.UploadStreamResponse{}, err
 }
 
-func (f *fakeBlobstore) uploadBlobFile(_ context.Context, fi *os.File, _ *azblob.BlockBlobClient, _ azblob.UploadOption) (*http.Response, error) {
+func (f *fakeBlobstore) uploadBlobFile(_ context.Context, container string, blobName string, fi *os.File, _ *azblob.Client, _ *azblob.UploadFileOptions) (azblob.UploadFileResponse, error) {
 	if f.shouldErr {
-		return nil, fmt.Errorf("error")
+		return azblob.UploadFileResponse{}, fmt.Errorf("error")
 	}
 	_, err := io.Copy(f.out, fi)
-	return nil, err
+	return azblob.UploadFileResponse{}, err
 }
 
 func TestLocalToBlob(t *testing.T) {
@@ -104,7 +103,7 @@ func TestLocalToBlob(t *testing.T) {
 
 	content := "hello world"
 	u := "https://account.windows.net"
-	to, err := azblob.NewContainerClientWithNoCredential(u, nil)
+	to, err := azblob.NewClientWithNoCredential(u, nil)
 	if err != nil {
 		panic(err)
 	}
@@ -198,7 +197,7 @@ func TestLocalToBlob(t *testing.T) {
 			uploadBlob:   fbs.uploadBlobFile,
 		}
 
-		_, _, err := in.localToBlob(context.Background(), test.from, to, &properties.All{})
+		_, _, err := in.localToBlob(context.Background(), test.from, to, "", &properties.All{})
 		switch {
 		case err == nil && test.err:
 			t.Errorf("TestLocalToBlob(%s): got err == nil, want err != nil", test.desc)

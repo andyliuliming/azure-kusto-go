@@ -11,9 +11,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/yangzuo0621/azure-kusto-go/kusto"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/ingest"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/unsafe"
+	"github.com/andyliuliming/azure-kusto-go/kusto"
+	"github.com/andyliuliming/azure-kusto-go/kusto/ingest"
+	"github.com/andyliuliming/azure-kusto-go/kusto/unsafe"
 )
 
 const (

@@ -4,10 +4,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/table"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/types"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/value"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/table"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/types"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/value"
 
 	"github.com/google/uuid"
 	"github.com/kylelemons/godebug/pretty"

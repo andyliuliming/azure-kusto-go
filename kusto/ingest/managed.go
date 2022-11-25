@@ -9,9 +9,9 @@ import (
 
 	"github.com/cenkalti/backoff/v4"
 	"github.com/google/uuid"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/ingest/internal/gzip"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/ingest/internal/properties"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
+	"github.com/andyliuliming/azure-kusto-go/kusto/ingest/internal/gzip"
+	"github.com/andyliuliming/azure-kusto-go/kusto/ingest/internal/properties"
 )
 
 const (

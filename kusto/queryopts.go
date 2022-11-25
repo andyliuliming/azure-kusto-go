@@ -6,8 +6,8 @@ package kusto
 import (
 	"time"
 
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/value"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/value"
 )
 
 // requestProperties is a POD used by clients to describe specific needs from the service.
