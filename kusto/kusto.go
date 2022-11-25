@@ -10,9 +10,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/internal/frames"
-	v2 "github.com/yangzuo0621/azure-kusto-go/kusto/internal/frames/v2"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
+	"github.com/andyliuliming/azure-kusto-go/kusto/internal/frames"
+	v2 "github.com/andyliuliming/azure-kusto-go/kusto/internal/frames/v2"
 
 	"github.com/Azure/go-autorest/autorest"
 	"github.com/Azure/go-autorest/autorest/azure/auth"

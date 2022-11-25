@@ -1,7 +1,7 @@
-# Microsoft Azure Data Explorer Public Preview (Kusto) [![GoDoc](https://godoc.org/github.com/yangzuo0621/azure-kusto-go?status.svg)](https://godoc.org/github.com/yangzuo0621/azure-kusto-go)
+# Microsoft Azure Data Explorer Public Preview (Kusto) [![GoDoc](https://godoc.org/github.com/andyliuliming/azure-kusto-go?status.svg)](https://godoc.org/github.com/andyliuliming/azure-kusto-go)
 
 - [About Azure Data Explorer](https://azure.microsoft.com/en-us/services/data-explorer/)
-- [Go Client documentation](https://godoc.org/github.com/yangzuo0621/azure-kusto-go)
+- [Go Client documentation](https://godoc.org/github.com/andyliuliming/azure-kusto-go)
 
 This is a data plane SDK (it is for interacting with Azure Data Explorer service). For the control plane (resource administration), go [here](https://github.com/Azure/azure-sdk-for-go/tree/master/services/kusto/mgmt)
 
@@ -38,9 +38,9 @@ This means that there could be extra data that will be skipped when using these 
 
 #### Addtional Features
 * Support extracting non-primary tables from a `RowIterator` using the following methods - `GetNonPrimary`, `GetExtendedProperties` and `GetQueryCompletionInformation`. Fixed #85 
-* Expose `TableFragmentType` via a Replace flag by @w1ndy in https://github.com/yangzuo0621/azure-kusto-go/pull/74
-* Refactor value converters and implement `ExtractValues` for `Row` by @w1ndy in https://github.com/yangzuo0621/azure-kusto-go/pull/75
-* Better Dynamic converter by @w1ndy in https://github.com/yangzuo0621/azure-kusto-go/pull/78
+* Expose `TableFragmentType` via a Replace flag by @w1ndy in https://github.com/andyliuliming/azure-kusto-go/pull/74
+* Refactor value converters and implement `ExtractValues` for `Row` by @w1ndy in https://github.com/andyliuliming/azure-kusto-go/pull/75
+* Better Dynamic converter by @w1ndy in https://github.com/andyliuliming/azure-kusto-go/pull/78
 * Support more forms of decimal type, and accept input of big.Int for it. Fixed #86 
 
 #### Fixes
@@ -48,7 +48,7 @@ This means that there could be extra data that will be skipped when using these 
 * Moved from the old deprecated azblob to the new supported one. This should solve some issues in uploading blobs, specifically memory leaks.
 
 #### Internal Improvements
-* Added go-fmt gate check by @AsafMah in https://github.com/yangzuo0621/azure-kusto-go/pull/77
+* Added go-fmt gate check by @AsafMah in https://github.com/andyliuliming/azure-kusto-go/pull/77
 * Parallelized tests and made them more robust
 
 ### Version 0.5.2
@@ -58,7 +58,7 @@ As always, we recommend re-using clients and ingestors whenever possible.
 
 ## Install
 
-* `go get github.com/yangzuo0621/azure-kusto-go/kusto`
+* `go get github.com/andyliuliming/azure-kusto-go/kusto`
 
 
 ## Minimum Requirements
@@ -101,7 +101,7 @@ endpoint represents the Kusto endpoint. This will resemble: "https://<instance>.
 The Kusto package package queries data into a ***table.Row** which can be printed or have the column data extracted.
 
 ```go
-// table package is: github.com/yangzuo0621/azure-kusto-go/kusto/data/table
+// table package is: github.com/andyliuliming/azure-kusto-go/kusto/data/table
 
 // Query our database table "systemNodes" for the CollectionTimes and the NodeIds.
 iter, err := client.Query(ctx, "database", kusto.NewStmt("systemNodes | project CollectionTime, NodeId"))

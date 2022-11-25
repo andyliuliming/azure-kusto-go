@@ -7,7 +7,7 @@ import (
 	storageuid "github.com/gofrs/uuid"
 	"github.com/google/uuid"
 	"github.com/kylelemons/godebug/pretty"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/ingest/internal/properties"
+	"github.com/andyliuliming/azure-kusto-go/kusto/ingest/internal/properties"
 )
 
 // StatusCode is the ingestion status

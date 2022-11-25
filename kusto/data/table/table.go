@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/types"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/value"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/types"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/value"
 )
 
 // Column describes a column descriptor.

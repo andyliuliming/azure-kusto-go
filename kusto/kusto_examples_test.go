@@ -3,15 +3,15 @@ package kusto
 import (
 	"context"
 	"fmt"
-	kustoErrors "github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
+	kustoErrors "github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
 	"io"
 	"net/http"
 	"net/url"
 	"sync"
 	"time"
 
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/table"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/types"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/table"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/types"
 
 	"github.com/Azure/go-autorest/autorest/azure/auth"
 )

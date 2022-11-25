@@ -7,11 +7,11 @@ import (
 	"context"
 	"sync"
 
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/table"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/internal/frames"
-	v1 "github.com/yangzuo0621/azure-kusto-go/kusto/internal/frames/v1"
-	v2 "github.com/yangzuo0621/azure-kusto-go/kusto/internal/frames/v2"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/table"
+	"github.com/andyliuliming/azure-kusto-go/kusto/internal/frames"
+	v1 "github.com/andyliuliming/azure-kusto-go/kusto/internal/frames/v1"
+	v2 "github.com/andyliuliming/azure-kusto-go/kusto/internal/frames/v2"
 )
 
 // stateFn represents a function that executes at a given state.

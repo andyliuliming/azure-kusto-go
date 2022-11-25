@@ -15,11 +15,11 @@ import (
 
 	"github.com/Azure/go-autorest/autorest"
 	"github.com/google/uuid"
-	"github.com/yangzuo0621/azure-kusto-go/kusto"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/errors"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/ingest/internal/properties"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/internal/response"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/internal/version"
+	"github.com/andyliuliming/azure-kusto-go/kusto"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
+	"github.com/andyliuliming/azure-kusto-go/kusto/ingest/internal/properties"
+	"github.com/andyliuliming/azure-kusto-go/kusto/internal/response"
+	"github.com/andyliuliming/azure-kusto-go/kusto/internal/version"
 )
 
 var validURL = regexp.MustCompile(`https://([a-zA-Z0-9_-]+\.){1,2}.*\??`)

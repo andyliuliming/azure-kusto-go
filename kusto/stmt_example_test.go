@@ -3,8 +3,8 @@ package kusto_test
 import (
 	"fmt"
 
-	"github.com/yangzuo0621/azure-kusto-go/kusto"
-	"github.com/yangzuo0621/azure-kusto-go/kusto/data/types"
+	"github.com/andyliuliming/azure-kusto-go/kusto"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/types"
 )
 
 const (
