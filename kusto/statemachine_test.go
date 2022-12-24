@@ -8,12 +8,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Azure/azure-kusto-go/kusto/data/errors"
-	"github.com/Azure/azure-kusto-go/kusto/data/table"
-	"github.com/Azure/azure-kusto-go/kusto/data/value"
-	"github.com/Azure/azure-kusto-go/kusto/internal/frames"
-	v1 "github.com/Azure/azure-kusto-go/kusto/internal/frames/v1"
-	v2 "github.com/Azure/azure-kusto-go/kusto/internal/frames/v2"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/table"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/value"
+	"github.com/andyliuliming/azure-kusto-go/kusto/internal/frames"
+	v1 "github.com/andyliuliming/azure-kusto-go/kusto/internal/frames/v1"
+	v2 "github.com/andyliuliming/azure-kusto-go/kusto/internal/frames/v2"
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 )

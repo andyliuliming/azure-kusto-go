@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Azure/azure-kusto-go/kusto/data/errors"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
 	"github.com/cenkalti/backoff/v4"
 	"github.com/google/uuid"
 )

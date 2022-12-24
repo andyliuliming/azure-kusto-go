@@ -1,6 +1,6 @@
-module github.com/Azure/azure-kusto-go
+module github.com/andyliuliming/azure-kusto-go
 
-go 1.19
+go 1.18
 
 require (
 	github.com/Azure/azure-pipeline-go v0.1.8

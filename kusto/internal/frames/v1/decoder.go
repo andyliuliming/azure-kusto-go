@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/Azure/azure-kusto-go/kusto/internal/frames/unmarshal"
-	"github.com/Azure/azure-kusto-go/kusto/internal/frames/unmarshal/json"
+	"github.com/andyliuliming/azure-kusto-go/kusto/internal/frames/unmarshal"
+	"github.com/andyliuliming/azure-kusto-go/kusto/internal/frames/unmarshal/json"
 
-	"github.com/Azure/azure-kusto-go/kusto/data/errors"
-	"github.com/Azure/azure-kusto-go/kusto/internal/frames"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
+	"github.com/andyliuliming/azure-kusto-go/kusto/internal/frames"
 )
 
 // Reference: This is what the top level data structure looks like for a V1 query. However, we are
