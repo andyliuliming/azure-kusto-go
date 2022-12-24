@@ -8,11 +8,11 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/Azure/azure-kusto-go/kusto/data/errors"
-	"github.com/Azure/azure-kusto-go/kusto/data/table"
-	"github.com/Azure/azure-kusto-go/kusto/data/value"
-	"github.com/Azure/azure-kusto-go/kusto/internal/frames"
-	v1 "github.com/Azure/azure-kusto-go/kusto/internal/frames/v1"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/table"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/value"
+	"github.com/andyliuliming/azure-kusto-go/kusto/internal/frames"
+	v1 "github.com/andyliuliming/azure-kusto-go/kusto/internal/frames/v1"
 )
 
 type columnData struct {

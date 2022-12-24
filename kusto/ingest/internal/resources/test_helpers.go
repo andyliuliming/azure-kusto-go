@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/Azure/azure-kusto-go/kusto"
-	"github.com/Azure/azure-kusto-go/kusto/data/table"
-	"github.com/Azure/azure-kusto-go/kusto/data/types"
-	"github.com/Azure/azure-kusto-go/kusto/data/value"
-	"github.com/Azure/azure-kusto-go/kusto/ingest/internal/properties"
+	"github.com/andyliuliming/azure-kusto-go/kusto"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/table"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/types"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/value"
+	"github.com/andyliuliming/azure-kusto-go/kusto/ingest/internal/properties"
 )
 
 type FakeMgmt struct {

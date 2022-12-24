@@ -3,8 +3,8 @@ package kusto
 import (
 	"encoding/json"
 	"fmt"
-	kustoErrors "github.com/Azure/azure-kusto-go/kusto/data/errors"
-	"github.com/Azure/azure-kusto-go/kusto/utils"
+	kustoErrors "github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
+	"github.com/andyliuliming/azure-kusto-go/kusto/utils"
 	"io"
 	"net/http"
 	"net/url"

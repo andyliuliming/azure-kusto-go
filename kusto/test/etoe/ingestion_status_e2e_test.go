@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Azure/azure-kusto-go/kusto"
-	"github.com/Azure/azure-kusto-go/kusto/ingest"
-	"github.com/Azure/azure-kusto-go/kusto/unsafe"
+	"github.com/andyliuliming/azure-kusto-go/kusto"
+	"github.com/andyliuliming/azure-kusto-go/kusto/ingest"
+	"github.com/andyliuliming/azure-kusto-go/kusto/unsafe"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

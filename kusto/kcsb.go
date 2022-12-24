@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	kustoErrors "github.com/Azure/azure-kusto-go/kusto/data/errors"
+	kustoErrors "github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
 	"github.com/Azure/azure-sdk-for-go/sdk/azcore"
 	"github.com/Azure/azure-sdk-for-go/sdk/azidentity"
 )

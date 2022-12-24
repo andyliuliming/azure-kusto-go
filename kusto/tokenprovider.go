@@ -3,7 +3,7 @@ package kusto
 import (
 	"context"
 	"fmt"
-	"github.com/Azure/azure-kusto-go/kusto/utils"
+	"github.com/andyliuliming/azure-kusto-go/kusto/utils"
 	"net/http"
 	"strings"
 	"sync/atomic"

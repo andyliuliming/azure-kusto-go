@@ -3,11 +3,11 @@ package ingest
 import (
 	"bytes"
 	"context"
-	"github.com/Azure/azure-kusto-go/kusto/ingest/internal/properties"
+	"github.com/andyliuliming/azure-kusto-go/kusto/ingest/internal/properties"
 	"testing"
 
-	"github.com/Azure/azure-kusto-go/kusto"
-	"github.com/Azure/azure-kusto-go/kusto/data/errors"
+	"github.com/andyliuliming/azure-kusto-go/kusto"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

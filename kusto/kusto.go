@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Azure/azure-kusto-go/kusto/data/errors"
-	"github.com/Azure/azure-kusto-go/kusto/internal/frames"
-	v2 "github.com/Azure/azure-kusto-go/kusto/internal/frames/v2"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
+	"github.com/andyliuliming/azure-kusto-go/kusto/internal/frames"
+	v2 "github.com/andyliuliming/azure-kusto-go/kusto/internal/frames/v2"
 )
 
 // queryer provides for getting a stream of Kusto frames. Exists to allow fake Kusto streams in tests.

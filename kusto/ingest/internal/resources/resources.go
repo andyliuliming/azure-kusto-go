@@ -12,9 +12,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/Azure/azure-kusto-go/kusto"
-	kustoErrors "github.com/Azure/azure-kusto-go/kusto/data/errors"
-	"github.com/Azure/azure-kusto-go/kusto/data/table"
+	"github.com/andyliuliming/azure-kusto-go/kusto"
+	kustoErrors "github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/table"
 	"github.com/cenkalti/backoff/v4"
 )
 

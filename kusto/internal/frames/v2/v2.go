@@ -3,12 +3,12 @@ package v2
 
 import (
 	"fmt"
-	"github.com/Azure/azure-kusto-go/kusto/data/errors"
-	"github.com/Azure/azure-kusto-go/kusto/data/table"
-	"github.com/Azure/azure-kusto-go/kusto/data/value"
-	"github.com/Azure/azure-kusto-go/kusto/internal/frames"
-	"github.com/Azure/azure-kusto-go/kusto/internal/frames/unmarshal"
-	"github.com/Azure/azure-kusto-go/kusto/internal/frames/unmarshal/json"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/table"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/value"
+	"github.com/andyliuliming/azure-kusto-go/kusto/internal/frames"
+	"github.com/andyliuliming/azure-kusto-go/kusto/internal/frames/unmarshal"
+	"github.com/andyliuliming/azure-kusto-go/kusto/internal/frames/unmarshal/json"
 )
 
 // Base is information that is encoded in all frames. The fields aren't actually

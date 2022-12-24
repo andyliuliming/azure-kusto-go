@@ -1,4 +1,4 @@
-module github.com/Azure/azure-kusto-go
+module github.com/andyliuliming/azure-kusto-go
 
 go 1.18
 

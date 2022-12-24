@@ -4,14 +4,14 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	kustoErrors "github.com/Azure/azure-kusto-go/kusto/data/errors"
+	kustoErrors "github.com/andyliuliming/azure-kusto-go/kusto/data/errors"
 	"testing"
 	"time"
 
-	"github.com/Azure/azure-kusto-go/kusto"
-	"github.com/Azure/azure-kusto-go/kusto/data/table"
-	"github.com/Azure/azure-kusto-go/kusto/data/types"
-	"github.com/Azure/azure-kusto-go/kusto/data/value"
+	"github.com/andyliuliming/azure-kusto-go/kusto"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/table"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/types"
+	"github.com/andyliuliming/azure-kusto-go/kusto/data/value"
 
 	"github.com/kylelemons/godebug/pretty"
 )
